@@ -1,0 +1,17 @@
+<ul class="nav nav-tabs mb-3">
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/home"> <strong>Home Page</strong></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/signUp"><strong>Sign up</strong></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/signIn"> <strong>Sign in</strong></a>
+    </li>
+    
+    <li class="nav-item" *ngIf="isUser()">
+        <a class="nav-link" routerLink="/addRecipe"><strong>Add Recipe</strong></a>
+    </li>
+</ul>
+
+

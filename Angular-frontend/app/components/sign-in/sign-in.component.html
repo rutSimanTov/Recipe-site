@@ -1,0 +1,8 @@
+
+<div *ngIf="error" class="alert alert-danger">{{error}}</div>
+
+<div *ngIf="!error" class="p-4 border rounded shadow-sm bg-light" style="max-width: 400px; margin: auto;">
+    <input type="email" class="form-control mb-3" placeholder="Enter email" [(ngModel)]="user.email"> 
+    <input type="password" class="form-control mb-3" placeholder="password" [(ngModel)]="user.password"> 
+    <button class="btn btn-primary w-100" (click)="logIn()">sign in</button>
+</div>

@@ -1,0 +1,43 @@
+
+ <div class="container mt-4">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h2 class="card-title">{{recipe.name}}</h2>
+          <p class="card-text">{{recipe.description}}</p>
+
+          <div class=" mb-3">
+            <img [src]="imgUrl + recipe.image" class="img-fluid" alt="{{recipe.name}}" style="width: 400px; height: 300px; object-fit: cover;" />
+          </div>
+
+          <p class="card-text">
+            <strong>ID: {{ recipe.id }}</strong>  |
+            <strong>By user {{ recipe.userId }}</strong>  |
+            <strong>{{recipe.level}}</strong>  | 
+            <strong>{{ recipe.servingSize }} serving</strong>
+          </p>
+          
+          <!-- <p class="card-text" *ngIf="recipe.duration > 4">
+            <strong>Duration:</strong> {{recipe.duration | minute}}
+          </p>
+          <p class="card-text" *ngIf="4 > recipe.duration">
+            <strong>Duration:</strong> {{recipe.duration | hour}}
+          </p> -->
+
+          <p class="card-text"><strong>Duration:</strong> {{recipe.duration | duration}}</p>
+
+          <h5 class="mt-3">Ingredients:</h5>
+          <ul class="list-group">
+            <li *ngFor="let ingred of ingredients" class="list-group-item">
+              {{ingred.quantity}} {{ingred.name}}
+            </li>
+          </ul>
+
+          <h5 class="mt-3">Instructions:</h5>
+          <p class="card-text">{{recipe.instructions}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 

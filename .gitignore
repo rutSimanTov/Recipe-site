@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+out-tsc/
+
+# Angular specific
+/.angular/
+
+# C# specific
+bin/
+obj/
+*.user
+*.suo
+*.sln.docstates
+
+# Visual Studio Code settings
+.vscode/
+
+# Secrets
+appsettings.Development.json
+appsettings.Production.json

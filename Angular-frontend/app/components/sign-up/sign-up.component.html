@@ -1,0 +1,9 @@
+
+<div *ngIf="!error" class="p-4 border rounded shadow-sm bg-light" style="max-width: 400px; margin: auto;">
+    <input class="form-control mb-3" type="text" placeholder="Enter name" [(ngModel)]="user.name"/> 
+    <input class="form-control mb-3" type="text" placeholder="Enter last name" [(ngModel)]="user.lastName"/> 
+    <input class="form-control mb-3" type="email" placeholder="Enter email" [(ngModel)]="user.email"/> 
+    <input class="form-control mb-3" type="password" placeholder="Enter password" [(ngModel)]="user.password"/> 
+    <button class="btn btn-primary w-100" (click)="register()">sign up</button>
+</div>
+
