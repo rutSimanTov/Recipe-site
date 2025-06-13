@@ -7,7 +7,7 @@ import { Recipe } from "../Interfaces/recipe.interface";
 
 export class RecipeService {
 
-    url: string = "https://localhost:7054/Recipe"
+    url: string =environment.baseUrl+"/Recipe"
 
     constructor(private httpC: HttpClient) { }
 
