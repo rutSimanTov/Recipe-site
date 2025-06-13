@@ -7,7 +7,7 @@ import { Ingredient } from "../Interfaces/ingredient.interface";
 
 export class IngredientService {
     
-    url = "https://localhost:7054/Ingredient"
+    url = environment.baseUrl+"/Ingredient"
 
     constructor(private httpC: HttpClient) { }
 
