@@ -8,7 +8,7 @@ import { RecipeIngredientDTO } from "../Interfaces/recipe-ingredient-DTO.iterfac
 
 export class RecipeIngredientService {
 
-    url: string = "https://localhost:7054/RecipeIngredient"
+    url: string =environment.baseUrl+ "/RecipeIngredient"
     
 
     constructor(private httpC: HttpClient) { }
