@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class HomePageComponent {
   recipeArr: Recipe[] = []
   error: string = '';
-  imgUrl: string = "https://localhost:7054/images/"
+  imgUrl: string = environment.baseUrl+"/images/"
 
 
   constructor(private recipeS: RecipeService, private router: Router) { }
