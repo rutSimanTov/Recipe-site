@@ -8,9 +8,9 @@ import { RecipeIngredientDTO } from "../Interfaces/recipe-ingredient-DTO.iterfac
 
 export class RecipeIngredientService {
 
-     // url: string =process.env['baseUrl']+ "/RecipeIngredient"
+     url: string =process.env['baseUrl']+ "/RecipeIngredient"
 
-  url: string =environment.baseUrl+ "/RecipeIngredient"
+  // url: string =environment.baseUrl+ "/RecipeIngredient"
     
 
     constructor(private httpC: HttpClient) { }
