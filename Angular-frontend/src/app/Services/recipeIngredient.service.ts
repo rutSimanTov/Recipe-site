@@ -8,7 +8,7 @@ import { RecipeIngredientDTO } from "../Interfaces/recipe-ingredient-DTO.iterfac
 
 export class RecipeIngredientService {
 
-     url: string =process.env.baseUrl+ "/RecipeIngredient"
+     url: string =process.env['baseUrl']+ "/RecipeIngredient"
 
   // url: string =environment.baseUrl+ "/RecipeIngredient"
     
