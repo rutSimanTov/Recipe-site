@@ -13,7 +13,9 @@ import { Router } from '@angular/router';
 export class HomePageComponent {
   recipeArr: Recipe[] = []
   error: string = '';
-  imgUrl: string = environment.baseUrl+"/images/"
+  imgUrl: string = process.env.baseUrl+"/images/"
+    // imgUrl: string = environment.baseUrl+"/images/"
+
 
 
   constructor(private recipeS: RecipeService, private router: Router) { }
