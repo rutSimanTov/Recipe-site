@@ -6,8 +6,10 @@ import { Ingredient } from "../Interfaces/ingredient.interface";
 @Injectable({ providedIn: "root" })
 
 export class IngredientService {
-    
-    url:string = environment.baseUrl+"/Ingredient"
+
+      url:string = process.env.baseUrl+"/Ingredient"
+
+    // url:string = environment.baseUrl+"/Ingredient"
 
     constructor(private httpC: HttpClient) { }
 
