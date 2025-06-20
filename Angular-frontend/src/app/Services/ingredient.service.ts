@@ -7,7 +7,7 @@ import { Ingredient } from "../Interfaces/ingredient.interface";
 
 export class IngredientService {
 
-      url:string = process.env.baseUrl+"/Ingredient"
+      url:string = process.env['baseUrl']+"/Ingredient"
 
     // url:string = environment.baseUrl+"/Ingredient"
 
