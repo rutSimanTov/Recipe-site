@@ -7,8 +7,8 @@ import { Recipe } from "../Interfaces/recipe.interface";
 
 export class RecipeService {
 
-    // url: string =environment.baseUrl+"/Recipe"
-      url: string =process.env['baseUrl']+"/Recipe"
+    url: string =environment.baseUrl+"/Recipe"
+      // url: string =process.env['baseUrl']+"/Recipe"
 
 
     constructor(private httpC: HttpClient) { }
