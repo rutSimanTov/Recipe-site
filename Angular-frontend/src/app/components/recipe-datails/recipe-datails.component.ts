@@ -26,7 +26,9 @@ export class RecipeDatailsComponent implements OnInit {
     duration: 0, servingSize: 0, instructions: "", userId: 0
   }
 
-  imgUrl: string = environment.baseUrl+"/images/"
+  imgUrl: string =  process.env.baseUrl+"/images/"
+    // imgUrl: string = environment.baseUrl+"/images/"
+
 
 
   ingredients: RecipeIngredientDTO[] = []
