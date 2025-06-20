@@ -12,8 +12,8 @@ export class ImageService {
   onUpload(image: File): Observable<any> {
     const fromData = new FormData()
     fromData.append('file', image, image.name);
-    return this.httpC.post(process.env['baseUrl']+'/image/upload', fromData)
-        // return this.httpC.post(environment.baseUrl+'/image/upload', fromData)
+    // return this.httpC.post(process.env['baseUrl']+'/image/upload', fromData)
+        return this.httpC.post(environment.baseUrl+'/image/upload', fromData)
 
 
   }
