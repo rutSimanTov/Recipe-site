@@ -6,8 +6,8 @@ import { User } from "../Interfaces/user.interface";
 @Injectable({ providedIn: "root" })
 
 export class UserService {
-     // url: string =process.env['baseUrl']+ "/User"
-    url: string =environment.baseUrl+ "/User"
+     url: string =process.env['baseUrl']+ "/User"
+    // url: string =environment.baseUrl+ "/User"
 
     currentUser:User={id:0,name:'',lastName:'',password:'',email:''}
 
