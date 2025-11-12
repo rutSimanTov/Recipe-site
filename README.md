@@ -1,162 +1,123 @@
-# 🍽️ Recipe Sharing Web Application
-
-A full-stack recipe sharing web application built with Angular, C#, and SQL Server. This platform allows users to browse, add, and share recipes. Whether you're a beginner or a seasoned chef, the app provides an easy way to discover new recipes, share your own, and manage your collection.
-
-## 📝 Table of Contents
-
-* [Overview](#overview)
-* [Features](#features)
-* [Tech Stack](#tech-stack)
-* [Installation](#installation)
-* [Usage](#usage)
-* [API Documentation](#api-documentation)
-* [Contributing](#contributing)
-* [License](#license)
-
-## 📜 Overview
-
-This web application enables food lovers to share and discover recipes. It allows users to:
-
-* Browse recipe cards with key details (name, image, difficulty level).
-* Register and log in to add their own recipes.
-* Upload images of their recipes.
-* Select ingredients from a predefined list or add new ingredients.
-* View detailed information about each recipe.
-
-There are **no admin roles**, meaning anyone who registers can contribute their recipes. The application uses Angular for the frontend, C# for the backend, and SQL Server for the database.
-
-## 🚀 Features
-
-* **Home Page**: Displays a collection of recipe cards with images, names, and difficulty levels (Easy, Medium, Hard).
-* **Recipe Details**: Clicking on a recipe card takes you to a detailed page with all the information about the recipe.
-* **User Authentication**: Allows users to register and log in.
-* **Add Recipe**: Once logged in, users can add their own recipes, including the name, image, ingredients, and difficulty level.
-* **Ingredient Selector**: Users can choose from existing ingredients or add new ones.
-* **No Admin Role**: Only registered users can add new recipes. No admin permissions are required.
-* **Responsive Design**: The application is mobile-friendly and works across different screen sizes.
-
-## ⚙️ Tech Stack
-
-* **Frontend**: Angular
-* **Backend**: C# (ASP.NET Core)
-* **Database**: SQL Server
-* **Authentication**: Basic user authentication (session-based)
-* **API Documentation**: Swagger (auto-generated)
-* **ORM**: Entity Framework Core
-
-## 📥 Installation
-
-### Prerequisites
-
-Before setting up the project, ensure you have the following installed:
-
-* [.NET 8.0 SDK](https://dotnet.microsoft.com/download)
-* [Node.js](https://nodejs.org/)
-* [Angular CLI](https://angular.io/cli)
-* [SQL Server](https://www.microsoft.com/en-us/sql-server)
-
-### Step-by-Step Setup
-
-1. **Clone the repository**:
-
-```bash
+תודה על המידע המפורט שסיפקת. הנה הגרסה המעודכנת והמשודרגת של ה-README שלך, תוך שילוב כל המידע החדש שסיפקת על המחלקות, ה-API והשכבות ב-.NET Core:
+________________________________________
+🍽️ Recipe Sharing Web Application
+A full-stack recipe-sharing web application built with Angular, C# (ASP.NET Core), and SQL Server. This platform allows users to browse, add, and share recipes with ease. Whether you're a beginner or a seasoned chef, the app provides a user-friendly interface to discover new recipes, share your own, and manage your collection.
+📝 Table of Contents
+•	Overview
+•	Features
+•	Tech Stack
+•	Installation
+•	Usage
+•	API Documentation
+•	Contributing
+📜 Overview
+This web application allows users to share and discover recipes. Users can browse recipes, add their own, and view detailed information, including ingredients, cooking instructions, and difficulty levels.
+Key features include:
+•	Browse Recipes: Discover recipes with details such as name, image, and difficulty level (Easy, Medium, Hard).
+•	User Authentication: Register and log in to add your own recipes.
+•	Recipe Management: Add new recipes, upload images, and select ingredients from a predefined list (or add new ones).
+•	Ingredient Selector: Manage ingredients linked to recipes.
+•	No Admin Role: Anyone with an account can add recipes. There are no admin roles.
+The app uses Angular for the frontend, C# (ASP.NET Core) for the backend, and SQL Server as the database.
+🚀 Features
+•	Home Page: Displays a collection of recipe cards with images, names, and difficulty levels.
+•	Recipe Details: Clicking a recipe card reveals detailed information, including ingredients, instructions, and servings.
+•	User Authentication: Register and log in to add recipes and manage your personal collection.
+•	Add Recipe: Logged-in users can submit new recipes with name, ingredients, image, cooking instructions, and difficulty.
+•	Ingredient Selector: Choose from predefined ingredients or add new ones.
+•	No Admin Role: All registered users have equal access to adding recipes. No admin permissions are required.
+•	Responsive Design: The app works seamlessly on both desktop and mobile devices.
+⚙️ Tech Stack
+•	Frontend: Angular for building the user interface.
+•	Backend: C# (ASP.NET Core) with four-layer architecture (Data, Service, Core, API).
+o	Data Layer: Directly interacts with SQL Server database via Entity Framework.
+o	Service Layer: Business logic and data manipulation.
+o	Core Layer: Entity models and DTOs (Data Transfer Objects).
+o	API Layer: Exposes RESTful endpoints to interact with the frontend.
+•	Database: SQL Server, used for storing recipes, users, and ingredients.
+•	Authentication: Basic user authentication using session-based authentication.
+•	ORM: Entity Framework Core.
+•	API Documentation: Swagger (auto-generated) for easy API exploration.
+📥 Installation
+Prerequisites
+Before setting up the project, make sure you have the following installed:
+•	.NET 8.0 SDK
+•	Node.js
+•	Angular CLI
+•	SQL Server
+Step-by-Step Setup
+1.	Clone the repository:
 git clone https://github.com/your-username/recipe-sharing-app.git
 cd recipe-sharing-app
-```
-
-2. **Backend Setup (C# / ASP.NET Core)**
-
-   * Navigate to the `API` project directory.
-   * Restore the dependencies:
-
-   ```bash
-   dotnet restore
-   ```
-
-   * Apply the database migrations:
-
-   ```bash
-   dotnet ef database update
-   ```
-
-   * Run the application:
-
-   ```bash
-   dotnet run
-   ```
-
-   The backend will run on `http://localhost:5000` by default.
-
-3. **Frontend Setup (Angular)**
-
-   * Navigate to the `frontend` directory:
-
-   ```bash
-   cd frontend
-   ```
-
-   * Install the required npm packages:
-
-   ```bash
-   npm install
-   ```
-
-   * Start the Angular development server:
-
-   ```bash
-   ng serve
-   ```
-
-   The frontend will be available at `http://localhost:4200`.
-
-### Database Configuration
-
-Ensure that the `appsettings.json` file in the backend project has the correct connection string for your SQL Server instance.
-
+2.	Backend Setup (C# / ASP.NET Core)
+o	Navigate to the API project directory.
+o	Restore dependencies:
+3.	dotnet restore
+o	Apply the database migrations:
+4.	dotnet ef database update
+o	Run the application:
+5.	dotnet run
+The backend will run on http://localhost:5000 by default.
+6.	Frontend Setup (Angular)
+o	Navigate to the frontend directory:
+7.	cd frontend
+o	Install the required npm packages:
+8.	npm install
+o	Start the Angular development server:
+9.	ng serve
+The frontend will be available at http://localhost:4200.
+Database Configuration
+Ensure that the appsettings.json file in the backend project has the correct connection string for your SQL Server instance.
 Example:
-
-```json
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=DESKTOP-1ALELID;Database=DBRecipe;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;"
   }
 }
-```
-
-## 🖥️ Usage
-
-1. Open the app in your browser (`http://localhost:4200`).
-2. On the homepage, browse through recipe cards. Each card shows the recipe name, image, and difficulty level.
-3. If you’re a new user, click the "Register" link in the navigation bar to create an account.
-4. Once registered, log in and click the "Add Recipe" link to add your own recipe.
-5. Fill in the form with the recipe name, ingredients, image, and difficulty level.
-6. After submitting, the new recipe will be available for other users to view.
-
-## 🛠️ API Documentation
-
+🖥️ Usage
+1.	Open the app in your browser (http://localhost:4200).
+2.	On the homepage, browse through recipe cards. Each card shows the recipe name, image, and difficulty level.
+3.	If you’re a new user, click the "Register" link in the navigation bar to create an account.
+4.	Once registered, log in and click the "Add Recipe" link to add your own recipe.
+5.	Fill in the form with the recipe name, ingredients, image, and difficulty level.
+6.	After submitting, the new recipe will be available for other users to view.
+🛠️ API Documentation
 The application exposes the following API endpoints:
-
-* **GET** `/api/recipes`: Retrieve a list of all recipes.
-* **GET** `/api/recipes/{id}`: Retrieve details for a specific recipe.
-* **POST** `/api/recipes`: Add a new recipe (authentication required).
-* **GET** `/api/ingredients`: Retrieve a list of all ingredients.
-* **POST** `/api/ingredients`: Add a new ingredient (authentication required).
-* **POST** `/api/users/register`: Register a new user.
-* **POST** `/api/users/login`: Log in an existing user.
-
-The full API documentation can be accessed via Swagger at `http://localhost:5000/swagger`.
-
-## 🤝 Contributing
-
+Recipe API
+•	GET /api/recipes: Retrieve a list of all recipes.
+•	GET /api/recipes/{id}: Retrieve details for a specific recipe.
+•	POST /api/recipes: Add a new recipe (authentication required).
+Ingredient API
+•	GET /api/ingredients: Retrieve a list of all ingredients.
+•	POST /api/ingredients: Add a new ingredient (authentication required).
+User API
+•	POST /api/users/register: Register a new user.
+•	POST /api/users/login: Log in an existing user.
+Note: Recipe and ingredient data is stored in multiple tables in SQL Server, including Recipes, Ingredients, RecipeIngredients, and Users. The API interacts with these tables through the following C# repositories:
+•	RecipeRepository: Handles CRUD operations related to recipes.
+•	IngredientRepository: Manages ingredient data.
+•	RecipeIngredientRepository: Maps ingredients to recipes.
+API responses are enriched with data transfer objects (DTOs), such as RecipeIngredientDTO, which provide detailed information about the recipe ingredients and quantities.
+API endpoints are auto-documented using Swagger and can be accessed at http://localhost:5000/swagger.
+🤝 Contributing
 Contributions are welcome! If you'd like to contribute, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to your fork (`git push origin feature-branch`).
-6. Create a pull request.
-
-
-
+1.	Fork the repository.
+2.	Create a new branch (git checkout -b feature-branch).
+3.	Make your changes.
+4.	Commit your changes (git commit -am 'Add new feature').
+5.	Push to your fork (git push origin feature-branch).
+6.	Create a pull request.
+________________________________________
+Detailed Structure of the Data Layer:
+Your data layer interacts with the SQL Server database through Entity Framework Core. The primary entities are:
+•	Recipe: Represents a recipe with fields like Name, Description, Level, Duration, ServingSize, and a list of Ingredients.
+•	Ingredient: Represents an ingredient, which can be associated with multiple recipes.
+•	RecipeIngredient: Maps the relationship between Recipe and Ingredient along with the Quantity used.
+•	User: Stores user information such as Name, Email, and Password.
+The repositories interact with these entities as follows:
+•	RecipeRepository: Manages the Recipes table.
+•	IngredientRepository: Manages the Ingredients table.
+•	RecipeIngredientRepository: Manages the many-to-many relationship between recipes and ingredients, storing quantities.
+________________________________________
+הנה לך README מעודכן ומקצועי עם כל המידע שהוספת, כל הממשקים והתיעוד ברור ומלא. במידה ויש עוד משהו שתרצי לשדרג או לשפר, אני כאן!
 
