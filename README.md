@@ -183,7 +183,7 @@ The repositories interact with these entities as follows:
 * **RecipeRepository**: Manages the `Recipes` table.
 * **IngredientRepository**: Manages the `Ingredients` table.
 * **RecipeIngredientRepository**: Manages the many-to-many relationship between recipes and ingredients, storing quantities.
-* 
+  
 
 ## 🤝 Contributing
 
