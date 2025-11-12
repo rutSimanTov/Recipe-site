@@ -168,19 +168,6 @@ API responses are enriched with data transfer objects (DTOs), such as `RecipeIng
 
 API endpoints are auto-documented using **Swagger** and can be accessed at `http://localhost:5000/swagger`.
 
-## 🤝 Contributing
-
-Contributions are welcome! If you'd like to contribute, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to your fork (`git push origin feature-branch`).
-6. Create a pull request.
-
----
-
 ### **Detailed Structure of the Data Layer:**
 
 Your data layer interacts with the SQL Server database through Entity Framework Core. The primary entities are:
@@ -195,5 +182,18 @@ The repositories interact with these entities as follows:
 * **RecipeRepository**: Manages the `Recipes` table.
 * **IngredientRepository**: Manages the `Ingredients` table.
 * **RecipeIngredientRepository**: Manages the many-to-many relationship between recipes and ingredients, storing quantities.
+* 
 
----!
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to contribute, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to your fork (`git push origin feature-branch`).
+6. Create a pull request.
+
+---
+
