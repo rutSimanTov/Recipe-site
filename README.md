@@ -157,8 +157,6 @@ Contributions are welcome! If you'd like to contribute, follow these steps:
 5. Push to your fork (`git push origin feature-branch`).
 6. Create a pull request.
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
