@@ -10,6 +10,7 @@ A full-stack recipe-sharing web application built with **Angular**, **C# (ASP.NE
 * [Installation](#installation)
 * [Usage](#usage)
 * [API Documentation](#api-documentation)
+* [Detailed Structure of the Data Layer](#detailed-structure-of-the-data-layer)
 * [Contributing](#contributing)
 
 ## 📜 Overview
@@ -168,7 +169,7 @@ API responses are enriched with data transfer objects (DTOs), such as `RecipeIng
 
 API endpoints are auto-documented using **Swagger** and can be accessed at `http://localhost:5000/swagger`.
 
-### **Detailed Structure of the Data Layer:**
+## **Detailed Structure of the Data Layer:**
 
 Your data layer interacts with the SQL Server database through Entity Framework Core. The primary entities are:
 
