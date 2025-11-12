@@ -1,5 +1,4 @@
-תודה על המידע המפורט שסיפקת. הנה הגרסה המעודכנת והמשודרגת של ה-README שלך, תוך שילוב כל המידע החדש שסיפקת על המחלקות, ה-API והשכבות ב-.NET Core:
-________________________________________
+
 🍽️ Recipe Sharing Web Application
 A full-stack recipe-sharing web application built with Angular, C# (ASP.NET Core), and SQL Server. This platform allows users to browse, add, and share recipes with ease. Whether you're a beginner or a seasoned chef, the app provides a user-friendly interface to discover new recipes, share your own, and manage your collection.
 📝 Table of Contents
@@ -118,6 +117,4 @@ The repositories interact with these entities as follows:
 •	RecipeRepository: Manages the Recipes table.
 •	IngredientRepository: Manages the Ingredients table.
 •	RecipeIngredientRepository: Manages the many-to-many relationship between recipes and ingredients, storing quantities.
-________________________________________
-הנה לך README מעודכן ומקצועי עם כל המידע שהוספת, כל הממשקים והתיעוד ברור ומלא. במידה ויש עוד משהו שתרצי לשדרג או לשפר, אני כאן!
-
+_
