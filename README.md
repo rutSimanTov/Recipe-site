@@ -1,9 +1,4 @@
 
-# Recipe-site
-A full-stack recipe-sharing web application built with Angular, C# (ASP.NET Core), and SQL Server. This platform allows users to browse, add, and share recipes with ease.
-
-
-
 # 🍽️ Recipe Sharing Web Application
 
 A full-stack recipe-sharing web application built with **Angular**, **C# (ASP.NET Core)**, and **SQL Server**. This platform allows users to browse, add, and share recipes with ease. Whether you're a beginner or a seasoned chef, the app provides a user-friendly interface to discover new recipes, share your own, and manage your collection.
